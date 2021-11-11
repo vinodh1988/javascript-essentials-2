@@ -17,6 +17,8 @@ console.log(typeof(a))
 a=[1,2,3]
 console.log(a)
 console.log(typeof(a))
+console.log(a instanceof Array)
 a=new Array(1,2,3,5)
 console.log(a)
 console.log(typeof(a))
+console.log(a instanceof Array)
