@@ -1,4 +1,4 @@
-a=30
+const a=30
 
 function fun(){
     a=900
