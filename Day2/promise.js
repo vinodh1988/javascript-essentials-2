@@ -16,12 +16,30 @@ function getFromFar(){
         },3000)
      })
 }
-
+/*
+function caller(){
 item=getFromFar()
 
-item.then(
-    (data)=>console.log(data),
-    (error)=> console.log(error)
-)
+    item.then(
+         (data)=>
+            {
+                console.log(data)
+                console.log("follow up logic")
+            },
+        (error)=> console.log(error)
+    )
 
-console.log("code after promise")
+}*/
+
+async function caller(){
+try{
+    data = await getFromFar()
+    console.log(data)
+    console.log("Follow up logic")
+  }
+catch(e){
+    console.log(e)
+}
+}
+
+caller()
